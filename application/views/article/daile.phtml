@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <?php echo Yaf_View_Simple::render('common/head.phtml'); ?>
+</head>
+<body>
+<div class="ui container">
+    <?php echo Yaf_View_Simple::render('common/nav.phtml'); ?>
+
+    <div class="ui stackable grid">
+        <main class="eleven wide column">
+            <article>
+                <h1><?php echo $article['title']; ?></h1>
+                <p><?php echo date('Y-m-d H:i:s', $article['ctime']); ?></p>
+                <p>
+                    <?php echo $article['content']; ?>
+                </p>
+            </article>
+        </main>
+
+        <?php echo Yaf_View_Simple::render('common/right.phtml'); ?>
+
+    </div>
+</div>
+
+<?php echo Yaf_View_Simple::render('common/footer.phtml'); ?>
+
+</body>
+</html>

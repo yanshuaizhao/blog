@@ -1,0 +1,19 @@
+<aside class="five wide column">
+    <h4>分类</h4>
+    <?php foreach ($categoryAll as $k => $v): ?>
+        <p><a href="?id=<?php echo $v['id']; ?>"><?php echo $v['title']; ?></a></p>
+    <?php endforeach; ?>
+    <div class="ui divider"></div>
+
+    <h4>标签</h4>
+    <div class="tagcloud">
+        <?php foreach ($tagsList as $k => $v): ?>
+            <div class="ui label"><a href="/?id=<?php echo $v['id']; ?>"><?php echo $v['title']; ?></a></div>
+        <?php endforeach; ?>
+    </div>
+    <div class="ui divider"></div>
+
+    <h4>推荐</h4>
+    <p><a href="http://www.laruence.com/" target="_blank">风雪之隅</a></p>
+    <div class="ui divider"></div>
+</aside>

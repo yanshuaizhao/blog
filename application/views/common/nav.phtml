@@ -1,0 +1,22 @@
+<nav class="ui inverted grey big stackable menu">
+    <div class="header active item">
+        <!-- this may be your photograph -->
+        <!--<img src="/img/logo.png" class="logo">-->
+        那年的你
+    </div>
+
+    <?php foreach ($categoryTop as $k => $v): ?>
+        <div class="item"><a href="?id=<?php echo $v['id']; ?>"><?php echo $v['title']; ?></a></div>
+    <?php endforeach; ?>
+
+    <!-- Search -->
+    <div class="right menu">
+        <div class="item">
+            <div class="ui inverted black icon input">
+                <i class="search icon"></i>
+                <input placeholder="Search this blog" type="text">
+            </div>
+        </div>
+        <!-- <a class="item">Link</a> -->
+    </div>
+</nav>
